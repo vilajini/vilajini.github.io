@@ -1,116 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vilajini Yogeswaran - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vilajini Yogeswaran - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #eef2f3, #cfd9df);
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #f9fafc;
+      color: #333;
     }
+
     .container {
-      max-width: 950px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-      animation: fadeIn 1.2s ease-in-out;
+      max-width: 960px;
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 50px 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+
     h1 {
+      font-size: 2.5em;
       text-align: center;
-      font-size: 2.8em;
-      color: #2c3e50;
+      color: #1c1e21;
       margin-bottom: 10px;
     }
-    p.subtitle {
+
+    .subtitle {
       text-align: center;
-      font-size: 1.3em;
-      color: #7f8c8d;
-      margin-bottom: 35px;
+      font-size: 1.2em;
+      color: #6c757d;
+      margin-bottom: 40px;
     }
+
     h2 {
-      border-left: 6px solid #3498db;
-      padding-left: 12px;
-      color: #34495e;
-      margin-top: 50px;
-      font-size: 1.6em;
+      font-size: 1.4em;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      color: #1c1e21;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 6px;
     }
+
+    p, li {
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
     ul {
-      padding-left: 25px;
+      padding-left: 20px;
     }
+
     ul li {
-      margin-bottom: 12px;
-      line-height: 1.6;
+      margin-bottom: 10px;
     }
+
     .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 15px;
-      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
     }
+
     .skill-box {
-      background: #ecf6ff;
-      padding: 12px 18px;
-      border-left: 6px solid #3498db;
-      border-radius: 8px;
+      background-color: #edf2f7;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 0.95em;
       font-weight: 500;
-      color: #2c3e50;
+      color: #1c1e21;
+      border: 1px solid #d3e2f0;
     }
+
     .contact-info p {
-      margin: 6px 0;
+      margin-bottom: 6px;
     }
+
     a {
-      color: #2980b9;
+      color: #0077cc;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-<h1>Vilajini Yogeswaran</h1>
+    <h1>Vilajini Yogeswaran</h1>
     <p class="subtitle">Final Year IT Undergraduate | Software Developer | Tech Enthusiast</p>
 
     <h2>About Me</h2>
-    <p>Final-year student at SLIIT with 2.5 years of software development experience at AgoySoft. I’m passionate about real-world tech problem solving and constantly exploring new technologies. I also have experience managing servers and deploying enterprise applications.</p>
+    <p>Final-year student at SLIIT with 2.5 years of software development experience at AgoySoft (Pvt) Ltd and 3 months of intern software engineer experience at Kale Systems (Pvt) Ltd. I’m passionate about solving real-world tech problems and constantly exploring new technologies. I also have experience managing servers and deploying enterprise applications.</p>
 
     <h2>Projects</h2>
     <ul>
-      <li><strong>Soft.lk (ERP System):</strong> AgoySoft’s flagship ERP system. I worked on inventory, finance, sales modules using PHP, JSON, jQuery. Managed hosting via HostGator/Vultr and server configurations with FileZilla.</li>
-      <li><strong>NovotimeBusiness.com:</strong> Denmark-based website and application for managing buying and selling of businesses. Developed for a European client, including features such as cross-border POS integration, business listing, customer management, and real-time invoice tracking.</li>
-      <li><strong>Staff Management System:</strong> Java Servlet-based campus project with modules for staff records, role-based access control, and report generation.</li>
-      <li><strong>Garbage Collection App:</strong> Developed using React Native (Expo) for route tracking, notification alerts, and collection logging. Aimed at optimizing waste collection in local communities.</li>
-      <li><strong>Online Auction System:</strong> Real-time bidding platform using PHP, SQL, and JavaScript.</li>
-      <li><strong>Fitness Social Media Platform:</strong> React & Spring Boot-based app for sharing workouts with authentication.</li>
-      <li><strong>Blood Bank Management:</strong> MERN stack app to manage donor data and hospital requests.</li>
-      <li><strong>Tourist Guide Mobile App:</strong> Kotlin app with hotel booking, currency converter, and billing features.</li>
+      <li><strong>Soft.lk (ERP System):</strong> Inventory, finance, and sales modules using PHP, JSON, jQuery. Hosted on HostGator & Vultr.</li>
+      <li><strong>NovotimeBusiness.com:</strong> Denmark-based POS-integrated platform for business listings and invoices.</li>
+      <li><strong>Staff Management System:</strong> Java Servlet system with role-based controls and report generation.</li>
+      <li><strong>Garbage Collection App:</strong> React Native app with real-time route tracking and alerts.</li>
+      <li><strong>Online Auction System:</strong> PHP + SQL-based live bidding platform.</li>
+      <li><strong>Fitness Social Media:</strong> Spring Boot + React system for workouts with authentication.</li>
+      <li><strong>Blood Bank Management:</strong> MERN Stack app for donor/hospital record tracking.</li>
+      <li><strong>Tourist Guide App:</strong> Kotlin-based mobile app with booking and billing features.</li>
     </ul>
 
     <h2>Work Experience</h2>
-    <p><strong>AgoySoft (Pvt) Ltd</strong> – Assistant Software Developer & Technical Support Engineer<br>Jan 2021 – Jun 2024</p>
+
+    <p><strong>Intern Software Engineer – Kale Systems</strong><br>Nov 13, 2024 – Feb 17, 2025 | Jaffna</p>
     <ul>
-      <li>Developed web & mobile apps using PHP, JSON, jQuery, PHPMyAdmin.</li>
-      <li>Provided client support and server-side troubleshooting.</li>
-      <li>Handled server setups, deployments, and maintenance on HostGator/Vultr.</li>
-      <li>Resigned in June 2024 to complete my final year research project.</li>
+      <li>Worked with Spring Boot, PostgreSQL, Docker, and CI/CD pipelines.</li>
+      <li>Assisted in backend architecture, automation, and container deployment.</li>
+      <li>Supported continuous integration workflows and testing.</li>
     </ul>
 
-    
+    <p><strong>Associate Software Engineer – AgoySoft (Pvt) Ltd</strong><br>Jan 01, 2023 – Jun 30, 2024</p>
+    <ul>
+      <li>Developed scalable full-stack web and mobile systems with cross-functional teams.</li>
+      <li>Managed APIs, server performance, and troubleshooting efforts.</li>
+      <li>Led multiple client-facing deployments and documentation.</li>
+    </ul>
+
+    <p><strong>Software Developer (Part-Time) – AgoySoft (Pvt) Ltd</strong><br>Jan 01, 2021 – Dec 30, 2022</p>
+    <ul>
+      <li>Contributed to codebase and web development tasks across projects.</li>
+      <li>Participated in backend logic design and testing.</li>
+      <li>Engaged in customer support and server updates.</li>
+    </ul>
 
     <h2>Skills</h2>
     <div class="skills-grid">
-      <div class="skill-box">Kali Linux, Metasploit Framework</div>
+      <div class="skill-box">Kali Linux</div>
+      <div class="skill-box">Metasploit Framework</div>
       <div class="skill-box">PHP, JSON, jQuery</div>
       <div class="skill-box">Java, Python, C++</div>
       <div class="skill-box">HTML, CSS, React</div>
@@ -124,15 +163,16 @@
     </div>
 
     <h2>Education</h2>
-    <p><strong>B.Sc. (Hons) in Information Technology</strong><br>SLIIT, 2021 – Present</p>
-    <p><strong>G.C.E A/L</strong><br>Jaffna Hindu Ladies' College – Physical Science Stream</p>
+    <p><strong>B.Sc. (Hons) in Information Technology</strong><br>SLIIT – 2021 to Present</p>
+    <p><strong>G.C.E A/L:</strong> Jaffna Hindu Ladies' College (Physical Science Stream)</p>
 
     <h2>Languages</h2>
     <p>English – Proficient (written & spoken)</p>
     <p>Tamil – Native</p>
 
     <h2>References</h2>
-    <p><strong>Yogabalan Sivasubramaniam</strong><br>Programmer, AgoySoft<br>📞 +94 77 351 8574<br>✉️ balans03@gmail.com</p>
+    <p><strong>Yogabalan Sivasubramaniam</strong><br>Programmer at AgoySoft<br>📞 +94 77 351 8574<br>✉️ balans03@gmail.com</p>
+    <p><strong>Vimalaraj Rajagopal</strong><br>CEO at Kale Systems<br>📞 +1 (650) 224-3522</p>
 
     <h2>Contact</h2>
     <div class="contact-info">
@@ -140,5 +180,8 @@
       <p><strong>Phone:</strong> 0757128592 | 0774288472</p>
       <p><strong>Home:</strong> Velanai West, Jaffna</p>
       <p><strong>Current:</strong> Fussels Lane, Colombo 06</p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/vilajini?tab=repositories" target="_blank">https://github.com/vilajini?tab=repositories</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/vilajini" target="_blank">github.com/vilajini</a></p>
     </div>
+  </div>
+</body>
+</html>
